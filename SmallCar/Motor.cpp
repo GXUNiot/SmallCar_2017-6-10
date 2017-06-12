@@ -62,8 +62,8 @@ void Motor::Go_Back() {
 void Motor::Go_Left() {
 	digitalWrite(Rear_Right_A, LOW);	//右后轮——前
 	digitalWrite(Rear_Right_B, HIGH);
-	digitalWrite(Rear_Right_A, LOW); //右后轮——前
-  digitalWrite(Rear_Right_B, HIGH);	
+	digitalWrite(Before_Left_A, LOW);	//右前轮——前
+	digitalWrite(Before_Left_B, HIGH);	
 	digitalWrite(Rear_Left_A, HIGH);	//左后轮——后
 	digitalWrite(Rear_Left_B, LOW);
 	digitalWrite(Before_Right_A, HIGH);	//左前轮——后
@@ -73,8 +73,8 @@ void Motor::Go_Left() {
 void Motor::Go_Right() {
 	digitalWrite(Before_Right_A, LOW);	//左前轮——前
 	digitalWrite(Before_Right_B, HIGH);
-	digitalWrite(Rear_Left_A, LOW);//左后轮——前
-  digitalWrite(Rear_Left_B, HIGH);  
+	digitalWrite(Before_Right_A, LOW);	//左前轮——前
+	digitalWrite(Before_Right_B, HIGH);
 
 	digitalWrite(Rear_Right_A, HIGH);	//右后轮——后
 	digitalWrite(Rear_Right_B, LOW);
